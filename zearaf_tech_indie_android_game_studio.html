@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Web SEO Meta Tags -->
+  <title>Zearaf Tech | Indie Android Game Studio — Offline Match-3, Ghost Defense &amp; Lane Defense</title>
+  <meta name="description" content="Zearaf Tech is an indie Android game studio crafting offline-friendly mobile games: Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense." />
+  <meta name="keywords" content="Zearaf Tech, indie Android games, Bloomstone Cozy Garden Match, Last Lighthouse Ghost Beam, Plants vs Pests Lane Defense, offline match 3, ghost defense game, tower defense" />
+  <meta name="author" content="Zearaf Tech" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zearaftech.github.io/" />
+
+  <!-- OpenGraph / Social Media Sharing Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zearaf Tech" />
+  <meta property="og:title" content="Zearaf Tech — Handcrafted Offline Android Games" />
+  <meta property="og:description" content="Play Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense on Google Play." />
+  <meta property="og:url" content="https://zearaftech.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zearaf Tech — Indie Android Game Studio" />
+  <meta name="twitter:description" content="Discover Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense on Google Play." />
+
+  <!-- Schema.org JSON-LD Structured Data for Google Search & App Pack Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://zearaftech.github.io/#organization",
+        "name": "Zearaf Tech",
+        "url": "https://zearaftech.github.io/",
+        "description": "Independent Android game development studio specializing in offline cozy match-3 puzzles, haunted ghost defense, and lane defense strategy games.",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=Zearaf+Tech"
+        ]
+      },
+      {
+        "@type": ["SoftwareApplication", "VideoGame"],
+        "name": "Bloomstone: Cozy Garden Match",
+        "operatingSystem": "Android",
+        "applicationCategory": "GameApplication",
+        "genre": ["Puzzle", "Match 3", "Casual"],
+        "playMode": "SinglePlayer",
+        "author": { "@id": "https://zearaftech.github.io/#organization" },
+        "description": "Relaxing match 3 garden puzzle game! Swap vibrant blossoms, match glowing garden stones, earn 3-star milestones with botanical boosters, and play offline with no Wi-Fi required.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "installUrl": "https://play.google.com/store/apps/details?id=com.bloomstonegarden.game"
+      },
+      {
+        "@type": ["SoftwareApplication", "VideoGame"],
+        "name": "Last Lighthouse: Ghost Beam",
+        "operatingSystem": "Android",
+        "applicationCategory": "GameApplication",
+        "genre": ["Arcade", "Survival", "Tower Defense"],
+        "playMode": "SinglePlayer",
+        "author": { "@id": "https://zearaftech.github.io/#organization" },
+        "description": "Haunted-lighthouse ghost defense and arcade survival game where sweeping your beam burns ghosts while draining your battery. Features Beam, Laser, and Flood lenses, 20 Story waves across 4 haunted stages, Endless mode, and 9 ghost types plus bosses.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "installUrl": "https://play.google.com/store/apps/details?id=com.lastlighthouse.game"
+      },
+      {
+        "@type": ["SoftwareApplication", "VideoGame"],
+        "name": "Plants vs Pests: Lane Defense",
+        "operatingSystem": "Android",
+        "applicationCategory": "GameApplication",
+        "genre": ["Strategy", "Tower Defense", "Casual"],
+        "playMode": "SinglePlayer",
+        "author": { "@id": "https://zearaftech.github.io/#organization" },
+        "description": "Colorful lane defense and tower defense strategy game with Lana the lamb. Deploy 7 powerful plants across 50 handcrafted stages in 10 worlds, defeat Scorpion Bosses, and play offline.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "installUrl": "https://play.google.com/store/apps/details?id=com.zearaftech.plantsvspests"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Self-Contained Lightweight CSS (Zero External Dependencies) -->
+  <style>
+    :root {
+      --bg-base: #070b14;
+      --bg-surface: #0e1525;
+      --bg-surface-hover: #131c31;
+      --bg-badge: #060911;
+      --border-subtle: rgba(148, 163, 184, 0.16);
+      --border-strong: rgba(148, 163, 184, 0.28);
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent-emerald: #10b981;
+      --accent-emerald-soft: rgba(16, 185, 129, 0.14);
+      --accent-amber: #f59e0b;
+      --accent-amber-soft: rgba(245, 158, 11, 0.14);
+      --accent-lime: #84cc16;
+      --accent-lime-soft: rgba(132, 204, 22, 0.14);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+      --shadow-card: 0 20px 40px -15px rgba(2, 6, 23, 0.75);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Sticky Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(7, 11, 20, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-radius: var(--radius-md);
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #10b981, #0d9488);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #04100c;
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .brand-sub {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .nav-link {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-link:hover {
+      background: rgba(30, 41, 59, 0.7);
+      color: #ffffff;
+    }
+
+    .nav-cta {
+      display: none;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1e293b;
+      color: #ffffff;
+      border: 1px solid var(--border-strong);
+      padding: 0.5rem 0.9rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-left: 0.35rem;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .nav-cta:hover {
+      background: #273549;
+      border-color: rgba(16, 185, 129, 0.5);
+    }
+
+    @media (min-width: 720px) {
+      .nav-cta {
+        display: inline-flex;
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 4.5rem 0 4.25rem;
+      text-align: center;
+      background:
+        radial-gradient(ellipse 70% 55% at 50% 0%, rgba(79, 70, 229, 0.22), transparent 70%),
+        radial-gradient(ellipse 55% 45% at 50% 10%, rgba(16, 185, 129, 0.14), transparent 70%);
+      border-bottom: 1px solid var(--border-subtle);
+      overflow: hidden;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.32);
+      color: #6ee7b7;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 8px #34d399;
+    }
+
+    .hero h1 {
+      margin: 0 auto;
+      max-width: 780px;
+      font-size: clamp(2.15rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+    }
+
+    .hero-gradient-text {
+      background: linear-gradient(95deg, #34d399, #5eead4, #818cf8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      margin: 1.35rem auto 0;
+      max-width: 650px;
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+    }
+
+    .hero-actions {
+      margin-top: 2.1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.85rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius-md);
+      background: var(--accent-emerald);
+      color: #03130d;
+      font-size: 0.925rem;
+      font-weight: 700;
+      box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.35);
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #34d399;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.4rem;
+      border-radius: var(--radius-md);
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid var(--border-strong);
+      color: #ffffff;
+      font-size: 0.925rem;
+      font-weight: 600;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: #1e293b;
+      border-color: #64748b;
+    }
+
+    /* Games Section */
+    .games-section {
+      padding: 4.5rem 0;
+    }
+
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      font-size: clamp(1.65rem, 3vw, 2.1rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .section-header p {
+      margin: 0.45rem 0 0;
+      max-width: 580px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .count-chip {
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+
+    @media (min-width: 920px) {
+      .games-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Game Card */
+    .game-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-4px);
+      background: var(--bg-surface-hover);
+    }
+
+    .game-card.card-bloom:hover {
+      border-color: rgba(16, 185, 129, 0.5);
+    }
+
+    .game-card.card-lighthouse:hover {
+      border-color: rgba(245, 158, 11, 0.5);
+    }
+
+    .game-card.card-plants:hover {
+      border-color: rgba(132, 204, 22, 0.5);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .app-emblem {
+      width: 68px;
+      height: 68px;
+      border-radius: 16px;
+      padding: 10px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .emblem-bloom {
+      background: linear-gradient(135deg, #10b981, #0d9488 55%, #0284c7);
+    }
+
+    .emblem-lighthouse {
+      background: linear-gradient(135deg, #0f172a, #1e1b4b 55%, #b45309);
+    }
+
+    .emblem-plants {
+      background: linear-gradient(135deg, #65a30d, #16a34a 55%, #065f46);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .pill {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.18rem 0.52rem;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    .pill-emerald {
+      background: var(--accent-emerald-soft);
+      color: #6ee7b7;
+    }
+
+    .pill-amber {
+      background: var(--accent-amber-soft);
+      color: #fcd34d;
+    }
+
+    .pill-lime {
+      background: var(--accent-lime-soft);
+      color: #bef264;
+    }
+
+    .pill-neutral {
+      background: rgba(51, 65, 85, 0.65);
+      color: var(--text-secondary);
+    }
+
+    .game-title {
+      margin: 0.45rem 0 0.15rem;
+      font-size: 1.18rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #ffffff;
+    }
+
+    .game-subtitle {
+      margin: 0;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .game-desc {
+      margin: 1.15rem 0 0;
+      font-size: 0.89rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .game-desc strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 1.1rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .check-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .card-footer {
+      margin-top: 1.5rem;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* Official-Style Google Play Badge */
+    .gp-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      width: 100%;
+      padding: 0.72rem 1rem;
+      background: var(--bg-badge);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    }
+
+    .gp-badge:hover {
+      background: #0b1120;
+      transform: translateY(-1px);
+    }
+
+    .card-bloom .gp-badge:hover {
+      border-color: rgba(16, 185, 129, 0.75);
+    }
+
+    .card-lighthouse .gp-badge:hover {
+      border-color: rgba(245, 158, 11, 0.75);
+    }
+
+    .card-plants .gp-badge:hover {
+      border-color: rgba(132, 204, 22, 0.75);
+    }
+
+    .gp-badge-text {
+      text-align: left;
+    }
+
+    .gp-get-it {
+      display: block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      line-height: 1.1;
+    }
+
+    .gp-store-name {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    /* Studio Highlights Section */
+    .studio-section {
+      padding: 3.75rem 0;
+      background: rgba(14, 21, 37, 0.45);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .studio-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.35rem;
+    }
+
+    @media (min-width: 768px) {
+      .studio-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .studio-card {
+      background: rgba(7, 11, 20, 0.65);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 1.4rem;
+    }
+
+    .studio-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.85rem;
+    }
+
+    .studio-card h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .studio-card p {
+      margin: 0.5rem 0 0;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.25rem 0;
+      background: var(--bg-base);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      text-align: center;
+    }
+
+    @media (min-width: 720px) {
+      .footer-inner {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    .copyright {
+      margin: 0;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .trademark {
+      margin: 0.25rem 0 0;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .footer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.65rem;
+    }
+
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+
+    .footer-btn:hover {
+      border-color: var(--border-strong);
+      color: #ffffff;
+    }
+
+    .footer-btn-copy {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.35);
+      color: #6ee7b7;
+    }
+
+    .footer-btn-copy:hover {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: rgba(16, 185, 129, 0.6);
+      color: #a7f3d0;
+    }
+
+    /* Privacy Policy Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background: rgba(2, 6, 23, 0.82);
+      backdrop-filter: blur(6px);
+    }
+
+    .modal-backdrop.is-open {
+      display: flex;
+    }
+
+    .modal-panel {
+      width: 100%;
+      max-width: 640px;
+      max-height: 85vh;
+      overflow-y: auto;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85);
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .modal-header h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .modal-close {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.4rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .modal-close:hover {
+      background: rgba(51, 65, 85, 0.6);
+      color: #ffffff;
+    }
+
+    .modal-body {
+      margin-top: 1.15rem;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    .modal-body h3 {
+      margin: 1.15rem 0 0.4rem;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .modal-body ul {
+      margin: 0.4rem 0;
+      padding-left: 1.25rem;
+    }
+
+    .modal-body li {
+      margin-bottom: 0.35rem;
+    }
+
+    .modal-footer {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      z-index: 60;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-md);
+      background: #0f172a;
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      color: #6ee7b7;
+      font-size: 0.8rem;
+      font-weight: 600;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .toast.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Reusable Google Play Triangle Gradients -->
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="gp-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00C3FF" />
+        <stop offset="100%" stop-color="#0072FF" />
+      </linearGradient>
+      <linearGradient id="gp-yellow" x1="0%" y1="50%" x2="100%" y2="50%">
+        <stop offset="0%" stop-color="#FFCE00" />
+        <stop offset="100%" stop-color="#FF9000" />
+      </linearGradient>
+      <linearGradient id="gp-red" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FF3A44" />
+        <stop offset="100%" stop-color="#C31162" />
+      </linearGradient>
+      <linearGradient id="gp-green" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#32BBFF" />
+        <stop offset="40%" stop-color="#00F076" />
+        <stop offset="100%" stop-color="#00E676" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <div class="brand-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <div>
+          <span class="brand-title">Zearaf Tech</span>
+          <span class="brand-sub">Indie Android Game Studio</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation" class="nav-links">
+        <a href="#games" class="nav-link">Games</a>
+        <a href="#studio" class="nav-link">Studio</a>
+        <button type="button" class="nav-link" onclick="openPrivacyModal()">Privacy Policy</button>
+        <a href="https://play.google.com/store/apps/developer?id=Zearaf+Tech" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          <span>Google Play</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.2" aria-hidden="true">
+            <path d="M7 17L17 7M7 7h10v10" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Offline-Friendly Android Games
+        </div>
+
+        <h1>
+          Handcrafted Mobile Games Built for <span class="hero-gradient-text">Pure Play</span>
+        </h1>
+
+        <p>
+          <strong>Zearaf Tech</strong> is an independent Android game studio creating cozy match-3 garden puzzles, haunted lighthouse ghost defense, and colorful lane defense strategy—playable anytime, anywhere with <strong>no Wi-Fi required</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#games" class="btn-primary">Explore Our Android Games</a>
+          <a href="https://play.google.com/store/apps/developer?id=Zearaf+Tech" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>View Developer Profile</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Android Games -->
+    <section id="games" aria-labelledby="games-heading" class="games-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 id="games-heading">Featured Android Releases</h2>
+            <p>Download our games directly on Google Play. Lightweight installs, smooth offline playability, and Google Play Games achievements.</p>
+          </div>
+          <span class="count-chip">3 Active Android Titles</span>
+        </div>
+
+        <div class="games-grid">
+
+          <!-- GAME 1: Bloomstone: Cozy Garden Match -->
+          <article class="game-card card-bloom">
+            <div>
+              <div class="card-top">
+                <div class="app-emblem emblem-bloom" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="46" height="46" fill="none">
+                    <circle cx="24" cy="14" r="7" fill="#FDF2F8" />
+                    <circle cx="34" cy="22" r="7" fill="#FCE7F3" />
+                    <circle cx="30" cy="33" r="7" fill="#FBCFE8" />
+                    <circle cx="18" cy="33" r="7" fill="#FCE7F3" />
+                    <circle cx="14" cy="22" r="7" fill="#FDF2F8" />
+                    <polygon points="24,17 30,24 24,31 18,24" fill="#FBBF24" stroke="#B45309" stroke-width="1.5" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pill-row">
+                    <span class="pill pill-emerald">Cozy Match-3</span>
+                    <span class="pill pill-neutral">Offline • No Wi-Fi</span>
+                  </div>
+                  <h3 class="game-title">Bloomstone: Cozy Garden Match</h3>
+                  <p class="game-subtitle">Relaxing Flower &amp; Tile Puzzle</p>
+                </div>
+              </div>
+
+              <p class="game-desc">
+                Swap vibrant blossoms, match glowing garden stones, and restore peaceful botanical sanctuaries at your own pace. Built for stress-free play with zero timers and full <strong>offline no-Wi-Fi</strong> support.
+              </p>
+
+              <ul class="feature-list">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#34d399" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>Classic match-3 gameplay with Sunburst &amp; Prism boosters</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#34d399" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>Earn 3-star milestones &amp; Star Collector achievements</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#34d399" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>100% playable offline anywhere without internet</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.bloomstonegarden.game" target="_blank" rel="noopener noreferrer" aria-label="Get Bloomstone: Cozy Garden Match on Google Play" class="gp-badge">
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="url(#gp-blue)" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1z" />
+                  <path fill="url(#gp-yellow)" d="M16 15.5l-3.1-3.1v-.2L16 9.1l.1.1 3.6 2.1c1 .6 1 1.5 0 2.1l-3.6 2.1-.1 0z" />
+                  <path fill="url(#gp-red)" d="M16.1 15.4L12.9 12.2 3.6 21.5c.3.4.9.4 1.6 0l10.9-6.1z" />
+                  <path fill="url(#gp-green)" d="M16.1 9.1L5.2 3c-.7-.4-1.3-.4-1.6 0l9.3 9.3 3.2-3.2z" />
+                </svg>
+                <div class="gp-badge-text">
+                  <span class="gp-get-it">Get it on</span>
+                  <span class="gp-store-name">Google Play</span>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- GAME 2: Last Lighthouse: Ghost Beam -->
+          <article class="game-card card-lighthouse">
+            <div>
+              <div class="card-top">
+                <div class="app-emblem emblem-lighthouse" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="46" height="46" fill="none">
+                    <polygon points="27,13 44,7 44,21 27,16" fill="#FDE68A" fill-opacity="0.8" />
+                    <polygon points="21,13 4,7 4,21 21,16" fill="#FDE68A" fill-opacity="0.45" />
+                    <rect x="20" y="10" width="8" height="6" rx="1.5" fill="#F59E0B" />
+                    <polygon points="19,16 29,16 31,38 17,38" fill="#F8FAFC" />
+                    <polygon points="18.3,23 29.7,23 30.2,28 17.8,28" fill="#EF4444" />
+                    <rect x="13" y="38" width="22" height="4" rx="2" fill="#64748B" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pill-row">
+                    <span class="pill pill-amber">Arcade Survival</span>
+                    <span class="pill pill-neutral">Ghost Defense</span>
+                  </div>
+                  <h3 class="game-title">Last Lighthouse: Ghost Beam</h3>
+                  <p class="game-subtitle">Haunted-Lighthouse Ghost Defense</p>
+                </div>
+              </div>
+
+              <p class="game-desc">
+                Aim your lighthouse beam across dark waters to burn rising ghosts before they breach your tower—while balancing the <strong>battery drain</strong> of your light. Master <strong>Beam, Laser, and Flood</strong> lenses across eerie ocean nights.
+              </p>
+
+              <ul class="feature-list">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>20 Story waves across 4 haunted stages + Endless mode</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>9 ghost types, Boss ghosts &amp; 3 switchable light lenses</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>Upgrade lamp, battery &amp; tower; full offline play</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.lastlighthouse.game" target="_blank" rel="noopener noreferrer" aria-label="Get Last Lighthouse: Ghost Beam on Google Play" class="gp-badge">
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="url(#gp-blue)" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1z" />
+                  <path fill="url(#gp-yellow)" d="M16 15.5l-3.1-3.1v-.2L16 9.1l.1.1 3.6 2.1c1 .6 1 1.5 0 2.1l-3.6 2.1-.1 0z" />
+                  <path fill="url(#gp-red)" d="M16.1 15.4L12.9 12.2 3.6 21.5c.3.4.9.4 1.6 0l10.9-6.1z" />
+                  <path fill="url(#gp-green)" d="M16.1 9.1L5.2 3c-.7-.4-1.3-.4-1.6 0l9.3 9.3 3.2-3.2z" />
+                </svg>
+                <div class="gp-badge-text">
+                  <span class="gp-get-it">Get it on</span>
+                  <span class="gp-store-name">Google Play</span>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- GAME 3: Plants vs Pests: Lane Defense -->
+          <article class="game-card card-plants">
+            <div>
+              <div class="card-top">
+                <div class="app-emblem emblem-plants" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="46" height="46" fill="none">
+                    <path d="M24 40V22" stroke="#ECFCCB" stroke-width="3.5" stroke-linecap="round" />
+                    <path d="M24 26C16 26 11 20 12 13C19 13 24 18 24 26Z" fill="#BEF264" />
+                    <path d="M24 22C32 22 37 16 36 9C29 9 24 14 24 22Z" fill="#A3E635" />
+                    <circle cx="24" cy="14" r="5" fill="#FDE047" />
+                    <path d="M16 40H32" stroke="#713F12" stroke-width="4" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pill-row">
+                    <span class="pill pill-lime">Lane Defense</span>
+                    <span class="pill pill-neutral">Tower Defense</span>
+                  </div>
+                  <h3 class="game-title">Plants vs Pests: Lane Defense</h3>
+                  <p class="game-subtitle">Garden Strategy with Lana the Lamb</p>
+                </div>
+              </div>
+
+              <p class="game-desc">
+                Team up with <strong>Lana the lamb</strong> to defend the Great Garden! Plant shooters, walls, and freezers in the right lanes to blast beetles, ants, snails, and giant <strong>Scorpion Bosses</strong> across 10 vibrant worlds.
+              </p>
+
+              <ul class="feature-list">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#a3e635" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>7 plants: Sunbloom, Seed Shooter, Chili Blast, Frost Bud &amp; more</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#a3e635" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>50 stages in 10 worlds + Scorpion Boss every 5th stage</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="#a3e635" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
+                  <span>2x speed toggle, Almanac, cloud save &amp; offline play</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.zearaftech.plantsvspests" target="_blank" rel="noopener noreferrer" aria-label="Get Plants vs Pests: Lane Defense on Google Play" class="gp-badge">
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="url(#gp-blue)" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1z" />
+                  <path fill="url(#gp-yellow)" d="M16 15.5l-3.1-3.1v-.2L16 9.1l.1.1 3.6 2.1c1 .6 1 1.5 0 2.1l-3.6 2.1-.1 0z" />
+                  <path fill="url(#gp-red)" d="M16.1 15.4L12.9 12.2 3.6 21.5c.3.4.9.4 1.6 0l10.9-6.1z" />
+                  <path fill="url(#gp-green)" d="M16.1 9.1L5.2 3c-.7-.4-1.3-.4-1.6 0l9.3 9.3 3.2-3.2z" />
+                </svg>
+                <div class="gp-badge-text">
+                  <span class="gp-get-it">Get it on</span>
+                  <span class="gp-store-name">Google Play</span>
+                </div>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Philosophy -->
+    <section id="studio" aria-labelledby="studio-heading" class="studio-section">
+      <div class="container">
+        <div class="studio-grid">
+          <div class="studio-card">
+            <div class="studio-icon" style="background:rgba(16,185,129,0.12);color:#34d399" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.58 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" />
+              </svg>
+            </div>
+            <h3 id="studio-heading">Offline-First Gameplay</h3>
+            <p>All three Zearaf Tech titles save progress locally so you can play uninterrupted on flights, trains, and low-signal zones.</p>
+          </div>
+
+          <div class="studio-card">
+            <div class="studio-icon" style="background:rgba(99,102,241,0.15);color:#818cf8" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3>Built for Android Phones &amp; Tablets</h3>
+            <p>Lightweight downloads, crisp hand-crafted visuals, and intuitive touch controls tuned for quick sessions or deep runs.</p>
+          </div>
+
+          <div class="studio-card">
+            <div class="studio-icon" style="background:rgba(245,158,11,0.14);color:#fbbf24" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Fair Ads &amp; Play Games Integration</h3>
+            <p>Optional rewarded videos for bonus perks, transparent data safety practices, and Google Play Games achievements &amp; leaderboards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="copyright">&copy; <span id="year">2026</span> Zearaf Tech. All rights reserved.</p>
+        <p class="trademark">Google Play and the Google Play logo are trademarks of Google LLC.</p>
+      </div>
+
+      <div class="footer-actions">
+        <button type="button" class="footer-btn" onclick="openPrivacyModal()">Privacy Policy</button>
+        <a href="https://play.google.com/store/apps/developer?id=Zearaf+Tech" target="_blank" rel="noopener noreferrer" class="footer-btn">Google Play Store</a>
+        <button type="button" class="footer-btn footer-btn-copy" onclick="copyPageSource()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+          <span id="copy-source-label">Copy HTML Source</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Google Play Console Compliant Privacy Policy Modal -->
+  <div id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title" class="modal-backdrop">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h2 id="privacy-title">Zearaf Tech — Privacy Policy</h2>
+        <button type="button" class="modal-close" onclick="closePrivacyModal()" aria-label="Close Privacy Policy">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Effective Date:</strong> November 19, 2026</p>
+        <p>
+          Zearaf Tech ("we," "our," or "us") develops and publishes Android mobile applications including <em>Bloomstone: Cozy Garden Match</em>, <em>Last Lighthouse: Ghost Beam</em>, and <em>Plants vs Pests: Lane Defense</em>. This Privacy Policy describes how data is handled when you play our games or visit our website.
+        </p>
+
+        <h3>1. Information &amp; Third-Party Platform Services</h3>
+        <p>
+          Our games are playable offline without creating a Zearaf Tech account. When connected to the internet, our Android apps may use standard Google platform services:
+        </p>
+        <ul>
+          <li><strong>Google Play Services &amp; Google Play Games:</strong> Used for sign-in, achievements, leaderboards, and cloud save synchronization.</li>
+          <li><strong>Google AdMob &amp; Firebase Diagnostics:</strong> Used to serve optional rewarded, banner, or interstitial ads and collect non-personal crash/performance diagnostics and Advertising IDs to keep our games free to play.</li>
+        </ul>
+
+        <h3>2. Local Device Storage</h3>
+        <p>
+          Game progress, unlocked stages, upgrades, and audio preferences are stored locally on your Android device. Uninstalling a game may erase local save data unless backed up via Google Play Games cloud save.
+        </p>
+
+        <h3>3. Children's Privacy</h3>
+        <p>
+          We do not knowingly collect personally identifiable information from children under 13. Ad configurations comply with Google Play family and content rating guidelines.
+        </p>
+
+        <h3>4. Contact</h3>
+        <p>
+          For support or privacy inquiries, please contact us through the developer contact email listed on our official <strong>Zearaf Tech</strong> Google Play Store pages.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-primary" onclick="closePrivacyModal()">Close Policy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-box" role="status" aria-live="polite" class="toast">
+    Full HTML source copied to clipboard — ready for GitHub Pages or Firebase Hosting!
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const privacyModal = document.getElementById('privacy-modal');
+
+    function openPrivacyModal() {
+      privacyModal.classList.add('is-open');
+    }
+
+    function closePrivacyModal() {
+      privacyModal.classList.remove('is-open');
+    }
+
+    privacyModal.addEventListener('click', function (event) {
+      if (event.target === privacyModal) {
+        closePrivacyModal();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && privacyModal.classList.contains('is-open')) {
+        closePrivacyModal();
+      }
+    });
+
+    function copyPageSource() {
+      try {
+        const fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+        const tempTextarea = document.createElement('textarea');
+        tempTextarea.value = fullHtml;
+        tempTextarea.setAttribute('readonly', '');
+        tempTextarea.style.position = 'fixed';
+        tempTextarea.style.left = '-9999px';
+        document.body.appendChild(tempTextarea);
+        tempTextarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempTextarea);
+
+        const label = document.getElementById('copy-source-label');
+        const toast = document.getElementById('toast-box');
+        label.textContent = 'Copied!';
+        toast.classList.add('is-visible');
+
+        setTimeout(function () {
+          label.textContent = 'Copy HTML Source';
+          toast.classList.remove('is-visible');
+        }, 3000);
+      } catch (err) {
+        console.error('Copy failed:', err);
+      }
+    }
+  </script>
+</body>
+</html>
