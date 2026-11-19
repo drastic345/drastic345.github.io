@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
   <!-- Primary Web SEO Meta Tags -->
   <title>Zearaf Tech | Indie Android Game Studio — Offline Match-3, Ghost Defense &amp; Lane Defense</title>
-  <meta name="description" content="Zearaf Tech is an indie Android game studio crafting offline-friendly mobile games: Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense." />
+  <meta name="description" content="Zearaf Tech builds offline-friendly Android games: Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense." />
   <meta name="keywords" content="Zearaf Tech, indie Android games, Bloomstone Cozy Garden Match, Last Lighthouse Ghost Beam, Plants vs Pests Lane Defense, offline match 3, ghost defense game, tower defense" />
   <meta name="author" content="Zearaf Tech" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://zearaftech.github.io/" />
 
-  <!-- OpenGraph / Social Media Sharing Meta Tags -->
+  <!-- OpenGraph & Twitter Meta Tags -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zearaf Tech" />
   <meta property="og:title" content="Zearaf Tech — Handcrafted Offline Android Games" />
-  <meta property="og:description" content="Play Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense on Google Play." />
+  <meta property="og:description" content="Download Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense on Google Play." />
   <meta property="og:url" content="https://zearaftech.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Zearaf Tech — Indie Android Game Studio" />
-  <meta name="twitter:description" content="Discover Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense on Google Play." />
+  <meta name="twitter:description" content="Explore Bloomstone: Cozy Garden Match, Last Lighthouse: Ghost Beam, and Plants vs Pests: Lane Defense on Google Play." />
 
-  <!-- Schema.org JSON-LD Structured Data for Google Search & App Pack Indexing -->
+  <!-- Schema.org JSON-LD Structured Data for Organization and VideoGame Entries -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,7 +35,7 @@
         "@id": "https://zearaftech.github.io/#organization",
         "name": "Zearaf Tech",
         "url": "https://zearaftech.github.io/",
-        "description": "Independent Android game development studio specializing in offline cozy match-3 puzzles, haunted ghost defense, and lane defense strategy games.",
+        "description": "Independent Android game development studio crafting offline-friendly cozy match-3 puzzles, haunted lighthouse ghost defense, and lane defense strategy games.",
         "sameAs": [
           "https://play.google.com/store/apps/developer?id=Zearaf+Tech"
         ]
@@ -45,7 +48,7 @@
         "genre": ["Puzzle", "Match 3", "Casual"],
         "playMode": "SinglePlayer",
         "author": { "@id": "https://zearaftech.github.io/#organization" },
-        "description": "Relaxing match 3 garden puzzle game! Swap vibrant blossoms, match glowing garden stones, earn 3-star milestones with botanical boosters, and play offline with no Wi-Fi required.",
+        "description": "Cozy match 3 flower and stone puzzle game. Swap vibrant blossoms, match glowing garden stones, earn stars and achievements, and play offline with no Wi-Fi required.",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -61,7 +64,7 @@
         "genre": ["Arcade", "Survival", "Tower Defense"],
         "playMode": "SinglePlayer",
         "author": { "@id": "https://zearaftech.github.io/#organization" },
-        "description": "Haunted-lighthouse ghost defense and arcade survival game where sweeping your beam burns ghosts while draining your battery. Features Beam, Laser, and Flood lenses, 20 Story waves across 4 haunted stages, Endless mode, and 9 ghost types plus bosses.",
+        "description": "Haunted lighthouse ghost defense game where sweeping your beam burns ghosts while draining battery across 3 lenses (Beam, Laser, Flood), Endless and Story modes (20 waves across 4 haunted stages), 9 ghost types plus bosses, and optional rewarded ads.",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -77,7 +80,7 @@
         "genre": ["Strategy", "Tower Defense", "Casual"],
         "playMode": "SinglePlayer",
         "author": { "@id": "https://zearaftech.github.io/#organization" },
-        "description": "Colorful lane defense and tower defense strategy game with Lana the lamb. Deploy 7 powerful plants across 50 handcrafted stages in 10 worlds, defeat Scorpion Bosses, and play offline.",
+        "description": "Lane and tower defense strategy game with Lana the lamb. Deploy 7 plants across 50 stages in 10 worlds, defeat the Scorpion Boss, and play offline.",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -89,12 +92,12 @@
   }
   </script>
 
-  <!-- Self-Contained Lightweight CSS (Zero External Dependencies) -->
+  <!-- Self-Contained CSS (Zero External Dependencies) -->
   <style>
     :root {
       --bg-base: #070b14;
       --bg-surface: #0e1525;
-      --bg-surface-hover: #131c31;
+      --bg-surface-hover: #131d33;
       --bg-badge: #060911;
       --border-subtle: rgba(148, 163, 184, 0.16);
       --border-strong: rgba(148, 163, 184, 0.28);
@@ -149,7 +152,7 @@
       padding: 0 1.25rem;
     }
 
-    /* Sticky Header */
+    /* Header */
     .site-header {
       position: sticky;
       top: 0;
@@ -253,14 +256,12 @@
 
     /* Hero Section */
     .hero {
-      position: relative;
-      padding: 4.5rem 0 4.25rem;
+      padding: 4.5rem 0 4rem;
       text-align: center;
       background:
         radial-gradient(ellipse 70% 55% at 50% 0%, rgba(79, 70, 229, 0.22), transparent 70%),
         radial-gradient(ellipse 55% 45% at 50% 10%, rgba(16, 185, 129, 0.14), transparent 70%);
       border-bottom: 1px solid var(--border-subtle);
-      overflow: hidden;
     }
 
     .hero-pill {
@@ -276,7 +277,7 @@
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.35rem;
     }
 
     .pulse-dot {
@@ -290,7 +291,7 @@
     .hero h1 {
       margin: 0 auto;
       max-width: 780px;
-      font-size: clamp(2.15rem, 5vw, 3.5rem);
+      font-size: clamp(2.1rem, 5vw, 3.4rem);
       font-weight: 800;
       line-height: 1.14;
       letter-spacing: -0.03em;
@@ -305,14 +306,14 @@
     }
 
     .hero p {
-      margin: 1.35rem auto 0;
+      margin: 1.25rem auto 0;
       max-width: 650px;
       font-size: 1.05rem;
       color: var(--text-secondary);
     }
 
     .hero-actions {
-      margin-top: 2.1rem;
+      margin-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -329,6 +330,7 @@
       color: #03130d;
       font-size: 0.925rem;
       font-weight: 700;
+      border: none;
       box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.35);
       transition: transform 0.2s, background 0.2s;
     }
@@ -360,7 +362,7 @@
 
     /* Games Section */
     .games-section {
-      padding: 4.5rem 0;
+      padding: 4.25rem 0 4.5rem;
     }
 
     .section-header {
@@ -369,20 +371,20 @@
       align-items: flex-end;
       justify-content: space-between;
       gap: 1rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.25rem;
     }
 
     .section-header h2 {
       margin: 0;
-      font-size: clamp(1.65rem, 3vw, 2.1rem);
+      font-size: clamp(1.6rem, 3vw, 2.05rem);
       font-weight: 800;
       letter-spacing: -0.02em;
       color: #ffffff;
     }
 
     .section-header p {
-      margin: 0.45rem 0 0;
-      max-width: 580px;
+      margin: 0.4rem 0 0;
+      max-width: 600px;
       color: var(--text-muted);
       font-size: 0.95rem;
     }
@@ -428,15 +430,15 @@
     }
 
     .game-card.card-bloom:hover {
-      border-color: rgba(16, 185, 129, 0.5);
+      border-color: rgba(16, 185, 129, 0.55);
     }
 
     .game-card.card-lighthouse:hover {
-      border-color: rgba(245, 158, 11, 0.5);
+      border-color: rgba(245, 158, 11, 0.55);
     }
 
     .game-card.card-plants:hover {
-      border-color: rgba(132, 204, 22, 0.5);
+      border-color: rgba(132, 204, 22, 0.55);
     }
 
     .card-top {
@@ -446,10 +448,10 @@
     }
 
     .app-emblem {
-      width: 68px;
-      height: 68px;
+      width: 66px;
+      height: 66px;
       border-radius: 16px;
-      padding: 10px;
+      padding: 9px;
       flex-shrink: 0;
       display: flex;
       align-items: center;
@@ -506,7 +508,7 @@
 
     .game-title {
       margin: 0.45rem 0 0.15rem;
-      font-size: 1.18rem;
+      font-size: 1.15rem;
       font-weight: 800;
       line-height: 1.25;
       color: #ffffff;
@@ -520,8 +522,8 @@
     }
 
     .game-desc {
-      margin: 1.15rem 0 0;
-      font-size: 0.89rem;
+      margin: 1.1rem 0 0;
+      font-size: 0.88rem;
       color: var(--text-secondary);
       line-height: 1.6;
     }
@@ -533,7 +535,7 @@
 
     .feature-list {
       list-style: none;
-      margin: 1.1rem 0 0;
+      margin: 1.05rem 0 0;
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -557,8 +559,8 @@
     }
 
     .card-footer {
-      margin-top: 1.5rem;
-      padding-top: 1.15rem;
+      margin-top: 1.45rem;
+      padding-top: 1.1rem;
       border-top: 1px solid var(--border-subtle);
     }
 
@@ -615,60 +617,11 @@
       line-height: 1.2;
     }
 
-    /* Studio Highlights Section */
-    .studio-section {
-      padding: 3.75rem 0;
-      background: rgba(14, 21, 37, 0.45);
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    .studio-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.35rem;
-    }
-
-    @media (min-width: 768px) {
-      .studio-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .studio-card {
-      background: rgba(7, 11, 20, 0.65);
-      border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      padding: 1.4rem;
-    }
-
-    .studio-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.85rem;
-    }
-
-    .studio-card h3 {
-      margin: 0;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #ffffff;
-    }
-
-    .studio-card p {
-      margin: 0.5rem 0 0;
-      font-size: 0.86rem;
-      color: var(--text-muted);
-    }
-
     /* Footer */
     .site-footer {
       border-top: 1px solid var(--border-subtle);
       padding: 2.25rem 0;
-      background: var(--bg-base);
+      background: rgba(14, 21, 37, 0.45);
     }
 
     .footer-inner {
@@ -724,18 +677,6 @@
     .footer-btn:hover {
       border-color: var(--border-strong);
       color: #ffffff;
-    }
-
-    .footer-btn-copy {
-      background: rgba(16, 185, 129, 0.12);
-      border-color: rgba(16, 185, 129, 0.35);
-      color: #6ee7b7;
-    }
-
-    .footer-btn-copy:hover {
-      background: rgba(16, 185, 129, 0.2);
-      border-color: rgba(16, 185, 129, 0.6);
-      color: #a7f3d0;
     }
 
     /* Privacy Policy Modal */
@@ -824,31 +765,6 @@
       display: flex;
       justify-content: flex-end;
     }
-
-    /* Toast Notification */
-    .toast {
-      position: fixed;
-      right: 1.25rem;
-      bottom: 1.25rem;
-      z-index: 60;
-      padding: 0.75rem 1rem;
-      border-radius: var(--radius-md);
-      background: #0f172a;
-      border: 1px solid rgba(16, 185, 129, 0.45);
-      color: #6ee7b7;
-      font-size: 0.8rem;
-      font-weight: 600;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      transform: translateY(12px);
-      pointer-events: none;
-      transition: opacity 0.25s ease, transform 0.25s ease;
-    }
-
-    .toast.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 </head>
 
@@ -893,7 +809,6 @@
 
       <nav aria-label="Primary Navigation" class="nav-links">
         <a href="#games" class="nav-link">Games</a>
-        <a href="#studio" class="nav-link">Studio</a>
         <button type="button" class="nav-link" onclick="openPrivacyModal()">Privacy Policy</button>
         <a href="https://play.google.com/store/apps/developer?id=Zearaf+Tech" target="_blank" rel="noopener noreferrer" class="nav-cta">
           <span>Google Play</span>
@@ -906,26 +821,26 @@
   </header>
 
   <main id="top">
-    <!-- Hero Section -->
+    <!-- Hero Header -->
     <section class="hero">
       <div class="container">
         <div class="hero-pill">
           <span class="pulse-dot" aria-hidden="true"></span>
-          Offline-Friendly Android Games
+          Indie Android Games • Offline-Friendly
         </div>
 
         <h1>
-          Handcrafted Mobile Games Built for <span class="hero-gradient-text">Pure Play</span>
+          Crafted Android Games Built for <span class="hero-gradient-text">Engaging Play</span>
         </h1>
 
         <p>
-          <strong>Zearaf Tech</strong> is an independent Android game studio creating cozy match-3 garden puzzles, haunted lighthouse ghost defense, and colorful lane defense strategy—playable anytime, anywhere with <strong>no Wi-Fi required</strong>.
+          <strong>Zearaf Tech</strong> creates cozy match-3 garden puzzles, haunted lighthouse ghost defense, and colorful lane defense strategy for Android—designed for smooth play on phones and tablets.
         </p>
 
         <div class="hero-actions">
-          <a href="#games" class="btn-primary">Explore Our Android Games</a>
+          <a href="#games" class="btn-primary">Browse Our Games</a>
           <a href="https://play.google.com/store/apps/developer?id=Zearaf+Tech" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-            <span>View Developer Profile</span>
+            <span>Google Play Developer Page</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
               <polyline points="15 3 21 3 21 9" />
@@ -936,20 +851,20 @@
       </div>
     </section>
 
-    <!-- Featured Android Games -->
+    <!-- 3-Card Game Showcase -->
     <section id="games" aria-labelledby="games-heading" class="games-section">
       <div class="container">
         <div class="section-header">
           <div>
-            <h2 id="games-heading">Featured Android Releases</h2>
-            <p>Download our games directly on Google Play. Lightweight installs, smooth offline playability, and Google Play Games achievements.</p>
+            <h2 id="games-heading">Android Games on Google Play</h2>
+            <p>Tap any game badge below to open its official Google Play Store listing.</p>
           </div>
-          <span class="count-chip">3 Active Android Titles</span>
+          <span class="count-chip">3 Android Titles</span>
         </div>
 
         <div class="games-grid">
 
-          <!-- GAME 1: Bloomstone: Cozy Garden Match -->
+          <!-- 1. Bloomstone: Cozy Garden Match -->
           <article class="game-card card-bloom">
             <div>
               <div class="card-top">
@@ -966,29 +881,29 @@
                 <div>
                   <div class="pill-row">
                     <span class="pill pill-emerald">Cozy Match-3</span>
-                    <span class="pill pill-neutral">Offline • No Wi-Fi</span>
+                    <span class="pill pill-neutral">No Wi-Fi</span>
                   </div>
                   <h3 class="game-title">Bloomstone: Cozy Garden Match</h3>
-                  <p class="game-subtitle">Relaxing Flower &amp; Tile Puzzle</p>
+                  <p class="game-subtitle">Flower &amp; Stone Puzzle</p>
                 </div>
               </div>
 
               <p class="game-desc">
-                Swap vibrant blossoms, match glowing garden stones, and restore peaceful botanical sanctuaries at your own pace. Built for stress-free play with zero timers and full <strong>offline no-Wi-Fi</strong> support.
+                Relaxing match-3 flower and stone puzzle! Swap vibrant blossoms, match glowing garden stones, and play <strong>offline with no Wi-Fi</strong> at your own calm pace.
               </p>
 
               <ul class="feature-list">
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#34d399" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>Classic match-3 gameplay with Sunburst &amp; Prism boosters</span>
+                  <span>Cozy match-3 flower &amp; garden stone puzzles</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#34d399" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>Earn 3-star milestones &amp; Star Collector achievements</span>
+                  <span>Earn stars &amp; unlock collector achievements</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#34d399" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>100% playable offline anywhere without internet</span>
+                  <span>Offline play with no Wi-Fi required</span>
                 </li>
               </ul>
             </div>
@@ -1009,13 +924,13 @@
             </div>
           </article>
 
-          <!-- GAME 2: Last Lighthouse: Ghost Beam -->
+          <!-- 2. Last Lighthouse: Ghost Beam -->
           <article class="game-card card-lighthouse">
             <div>
               <div class="card-top">
                 <div class="app-emblem emblem-lighthouse" aria-hidden="true">
                   <svg viewBox="0 0 48 48" width="46" height="46" fill="none">
-                    <polygon points="27,13 44,7 44,21 27,16" fill="#FDE68A" fill-opacity="0.8" />
+                    <polygon points="27,13 44,7 44,21 27,16" fill="#FDE68A" fill-opacity="0.82" />
                     <polygon points="21,13 4,7 4,21 21,16" fill="#FDE68A" fill-opacity="0.45" />
                     <rect x="20" y="10" width="8" height="6" rx="1.5" fill="#F59E0B" />
                     <polygon points="19,16 29,16 31,38 17,38" fill="#F8FAFC" />
@@ -1025,30 +940,30 @@
                 </div>
                 <div>
                   <div class="pill-row">
-                    <span class="pill pill-amber">Arcade Survival</span>
-                    <span class="pill pill-neutral">Ghost Defense</span>
+                    <span class="pill pill-amber">Ghost Defense</span>
+                    <span class="pill pill-neutral">3 Lenses</span>
                   </div>
                   <h3 class="game-title">Last Lighthouse: Ghost Beam</h3>
-                  <p class="game-subtitle">Haunted-Lighthouse Ghost Defense</p>
+                  <p class="game-subtitle">Haunted Lighthouse Defense</p>
                 </div>
               </div>
 
               <p class="game-desc">
-                Aim your lighthouse beam across dark waters to burn rising ghosts before they breach your tower—while balancing the <strong>battery drain</strong> of your light. Master <strong>Beam, Laser, and Flood</strong> lenses across eerie ocean nights.
+                Sweep your lighthouse beam to burn ghosts while managing <strong>battery drain</strong>. Switch between <strong>Beam, Laser, and Flood</strong> lenses across Endless and Story modes.
               </p>
 
               <ul class="feature-list">
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>20 Story waves across 4 haunted stages + Endless mode</span>
+                  <span>Endless &amp; Story modes (20 waves across 4 haunted stages)</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>9 ghost types, Boss ghosts &amp; 3 switchable light lenses</span>
+                  <span>9 ghost types &amp; bosses; Beam, Laser &amp; Flood lenses</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>Upgrade lamp, battery &amp; tower; full offline play</span>
+                  <span>Offline play with optional rewarded ads</span>
                 </li>
               </ul>
             </div>
@@ -1069,7 +984,7 @@
             </div>
           </article>
 
-          <!-- GAME 3: Plants vs Pests: Lane Defense -->
+          <!-- 3. Plants vs Pests: Lane Defense -->
           <article class="game-card card-plants">
             <div>
               <div class="card-top">
@@ -1085,7 +1000,7 @@
                 <div>
                   <div class="pill-row">
                     <span class="pill pill-lime">Lane Defense</span>
-                    <span class="pill pill-neutral">Tower Defense</span>
+                    <span class="pill pill-neutral">Strategy</span>
                   </div>
                   <h3 class="game-title">Plants vs Pests: Lane Defense</h3>
                   <p class="game-subtitle">Garden Strategy with Lana the Lamb</p>
@@ -1093,21 +1008,21 @@
               </div>
 
               <p class="game-desc">
-                Team up with <strong>Lana the lamb</strong> to defend the Great Garden! Plant shooters, walls, and freezers in the right lanes to blast beetles, ants, snails, and giant <strong>Scorpion Bosses</strong> across 10 vibrant worlds.
+                Lane and tower defense strategy with <strong>Lana the lamb</strong>! Deploy <strong>7 plants</strong> across <strong>50 stages in 10 worlds</strong> and defeat the <strong>Scorpion Boss</strong>.
               </p>
 
               <ul class="feature-list">
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#a3e635" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>7 plants: Sunbloom, Seed Shooter, Chili Blast, Frost Bud &amp; more</span>
+                  <span>7 plants &amp; Lana the lamb guiding your garden defense</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#a3e635" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>50 stages in 10 worlds + Scorpion Boss every 5th stage</span>
+                  <span>50 stages across 10 worlds + Scorpion Boss battles</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="#a3e635" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>
-                  <span>2x speed toggle, Almanac, cloud save &amp; offline play</span>
+                  <span>Tower defense action with offline gameplay support</span>
                 </li>
               </ul>
             </div>
@@ -1131,44 +1046,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Studio Philosophy -->
-    <section id="studio" aria-labelledby="studio-heading" class="studio-section">
-      <div class="container">
-        <div class="studio-grid">
-          <div class="studio-card">
-            <div class="studio-icon" style="background:rgba(16,185,129,0.12);color:#34d399" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.58 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" />
-              </svg>
-            </div>
-            <h3 id="studio-heading">Offline-First Gameplay</h3>
-            <p>All three Zearaf Tech titles save progress locally so you can play uninterrupted on flights, trains, and low-signal zones.</p>
-          </div>
-
-          <div class="studio-card">
-            <div class="studio-icon" style="background:rgba(99,102,241,0.15);color:#818cf8" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-                <line x1="12" y1="18" x2="12.01" y2="18" />
-              </svg>
-            </div>
-            <h3>Built for Android Phones &amp; Tablets</h3>
-            <p>Lightweight downloads, crisp hand-crafted visuals, and intuitive touch controls tuned for quick sessions or deep runs.</p>
-          </div>
-
-          <div class="studio-card">
-            <div class="studio-icon" style="background:rgba(245,158,11,0.14);color:#fbbf24" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
-            <h3>Fair Ads &amp; Play Games Integration</h3>
-            <p>Optional rewarded videos for bonus perks, transparent data safety practices, and Google Play Games achievements &amp; leaderboards.</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
@@ -1179,11 +1056,14 @@
         <p class="trademark">Google Play and the Google Play logo are trademarks of Google LLC.</p>
       </div>
 
-      
+      <div class="footer-actions">
+        <button type="button" class="footer-btn" onclick="openPrivacyModal()">Privacy Policy</button>
+        <a href="https://play.google.com/store/apps/developer?id=Zearaf+Tech" target="_blank" rel="noopener noreferrer" class="footer-btn">Google Play Store</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Google Play Console Compliant Privacy Policy Modal -->
+  <!-- Privacy Policy Modal -->
   <div id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title" class="modal-backdrop">
     <div class="modal-panel">
       <div class="modal-header">
@@ -1199,31 +1079,31 @@
       <div class="modal-body">
         <p><strong>Effective Date:</strong> November 19, 2026</p>
         <p>
-          Zearaf Tech ("we," "our," or "us") develops and publishes Android mobile applications including <em>Bloomstone: Cozy Garden Match</em>, <em>Last Lighthouse: Ghost Beam</em>, and <em>Plants vs Pests: Lane Defense</em>. This Privacy Policy describes how data is handled when you play our games or visit our website.
+          Zearaf Tech ("we," "our," or "us") develops and publishes Android games including <em>Bloomstone: Cozy Garden Match</em>, <em>Last Lighthouse: Ghost Beam</em>, and <em>Plants vs Pests: Lane Defense</em>. This Privacy Policy explains how information is handled when you use our games or visit this page.
         </p>
 
-        <h3>1. Information &amp; Third-Party Platform Services</h3>
+        <h3>1. Platform &amp; Ad Services</h3>
         <p>
-          Our games are playable offline without creating a Zearaf Tech account. When connected to the internet, our Android apps may use standard Google platform services:
+          Our games support offline gameplay without requiring an account with Zearaf Tech. When connected online, our Android apps may use Google services:
         </p>
         <ul>
-          <li><strong>Google Play Services &amp; Google Play Games:</strong> Used for sign-in, achievements, leaderboards, and cloud save synchronization.</li>
-          <li><strong>Google AdMob &amp; Firebase Diagnostics:</strong> Used to serve optional rewarded, banner, or interstitial ads and collect non-personal crash/performance diagnostics and Advertising IDs to keep our games free to play.</li>
+          <li><strong>Google Play Services &amp; Play Games:</strong> Used for sign-in, achievements, leaderboards, and cloud saves where supported.</li>
+          <li><strong>AdMob &amp; Diagnostics:</strong> Used to deliver optional rewarded ads or other supported ad formats and monitor app stability.</li>
         </ul>
 
-        <h3>2. Local Device Storage</h3>
+        <h3>2. Local Save Data</h3>
         <p>
-          Game progress, unlocked stages, upgrades, and audio preferences are stored locally on your Android device. Uninstalling a game may erase local save data unless backed up via Google Play Games cloud save.
+          Progress, settings, and stage unlocks are stored locally on your device. Removing the app may clear local data unless backed up via Google Play Games.
         </p>
 
         <h3>3. Children's Privacy</h3>
         <p>
-          We do not knowingly collect personally identifiable information from children under 13. Ad configurations comply with Google Play family and content rating guidelines.
+          We do not knowingly collect personal information from children under 13, and our store listings follow Google Play content rating and family guidelines.
         </p>
 
         <h3>4. Contact</h3>
         <p>
-          For support or privacy inquiries, please contact us through the developer contact email listed on our official <strong>Zearaf Tech</strong> Google Play Store pages.
+          For privacy questions or support, please reach out via the developer contact details listed on our official <strong>Zearaf Tech</strong> Google Play Store profile.
         </p>
       </div>
 
@@ -1231,11 +1111,6 @@
         <button type="button" class="btn-primary" onclick="closePrivacyModal()">Close Policy</button>
       </div>
     </div>
-  </div>
-
-  <!-- Toast Notification -->
-  <div id="toast-box" role="status" aria-live="polite" class="toast">
-    Full HTML source copied to clipboard — ready for GitHub Pages or Firebase Hosting!
   </div>
 
   <script>
@@ -1262,33 +1137,6 @@
         closePrivacyModal();
       }
     });
-
-    function copyPageSource() {
-      try {
-        const fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-        const tempTextarea = document.createElement('textarea');
-        tempTextarea.value = fullHtml;
-        tempTextarea.setAttribute('readonly', '');
-        tempTextarea.style.position = 'fixed';
-        tempTextarea.style.left = '-9999px';
-        document.body.appendChild(tempTextarea);
-        tempTextarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(tempTextarea);
-
-        const label = document.getElementById('copy-source-label');
-        const toast = document.getElementById('toast-box');
-        label.textContent = 'Copied!';
-        toast.classList.add('is-visible');
-
-        setTimeout(function () {
-          label.textContent = 'Copy HTML Source';
-          toast.classList.remove('is-visible');
-        }, 3000);
-      } catch (err) {
-        console.error('Copy failed:', err);
-      }
-    }
   </script>
 </body>
 </html>
